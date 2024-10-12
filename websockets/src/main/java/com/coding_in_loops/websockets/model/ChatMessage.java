@@ -2,24 +2,19 @@ package com.coding_in_loops.websockets.model;
 
 import java.time.LocalDateTime;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.validation.constraints.NotEmpty;
-
-@Entity
 public class ChatMessage {
 
-	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	
     private Long id;
-	@NotEmpty
 	private String content;
-	@NotEmpty
 	private String sender;
+	
+	
+
 	private MessageType type;
+	
 	private LocalDateTime timestamp;
+	
 	
 	public enum MessageType{
 		CHAT,LEAVE,JOIN

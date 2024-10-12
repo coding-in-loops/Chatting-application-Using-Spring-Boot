@@ -47,9 +47,8 @@ function onConnected() {
 
 
 function onError(error) {
-	console.error('WebSocket error:', error); 
-	   connectingElement.textContent = 'Could not connect to WebSocket server. Please refresh this page to try again!';
-	   connectingElement.style.color = 'red';
+    connectingElement.textContent = 'Could not connect to WebSocket server. Please refresh this page to try again!';
+    connectingElement.style.color = 'red';
 }
 
 
